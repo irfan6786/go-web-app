@@ -1,0 +1,23 @@
+# defualt values for go-web-app-chart.
+# this is a YAML-formatted file 
+# Declare varaible to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: irfanbarakba/go-web-app
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "v1"
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+   #k8s.io/ingress.class: nginx
+   #k8s.io/tls-acme: "true"
+  hosts:
+    - host: chart-example.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
