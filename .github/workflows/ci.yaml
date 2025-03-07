@@ -36,12 +36,16 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2 
+      uses: actions/checkout@v4
 
-    - name: Run golangci-lint 
-      uses: golangci/golangci-lint-action@v1.0.0
+    - name: Install golangci-lint
+      uses: golangci/golangci-lint-action@v2  # You may use a newer version like v2 if available
       with:
-        version: v1.46.2
+        version: v1.46  # Specify the golangci-lint version without the patch
+        install-mode: binary
+        verify: true
+        skip-cache: false
+        problem-matchers: false
 
   push:
     runs-on: ubuntu-latest
