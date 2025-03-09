@@ -8,7 +8,7 @@ image:
   repository: irfanbarakba/go-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-tag: 13719857310
+  tag: "v1"
 
 ingress:
   enabled: false
@@ -20,4 +20,4 @@ ingress:
     - host: chart-example.local
       paths:
         - path: /
-          pathType: ImplementationSpecific 
+          pathType: ImplementationSpecific

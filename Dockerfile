@@ -1,6 +1,6 @@
 # Correct example with uppercase instructions
 
-FROM golang:1.22.5 AS base
+FROM golang:1.23 AS base
 
 WORKDIR /app
 
