@@ -8,7 +8,11 @@ image:
   repository: irfanbarakba/go-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
+<<<<<<< HEAD:helm/go-web-ap-chart/values.yaml
   tag: "v1"
+=======
+tag: "v1"
+>>>>>>> ba01e986b981a8bff60d67ac42beec43d576f607:helm/go-web-app-chart/values.yaml
 
 ingress:
   enabled: false
