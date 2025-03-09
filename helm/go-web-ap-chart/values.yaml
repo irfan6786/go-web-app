@@ -21,3 +21,4 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
+# space remove
