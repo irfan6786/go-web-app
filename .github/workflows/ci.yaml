@@ -98,8 +98,7 @@ jobs:
 
         git config --global user.name "irfan6786"
         git config --global user.email "irfanbarakba@gmail.com"
-        git add helm/go-web-app-chart/values.yaml 
+        git add helm/go-web-ap-chart/values.yaml 
         git commit -m "update new tag in helm chart"
         git push origin main
-
 # pipeline
